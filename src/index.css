@@ -19,17 +19,26 @@ body {
 }
 
 #navbar {
-  flex-grow: 1;
+  flex-grow: 3;
   max-height: 10%;
   min-height: 40px;
-  background-color: #222222;
+  background-color: #222222c5;
   color: white;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  
 }
 
 #navbar div {
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.navColor {
+  transition: all 0.4s ease;
+  width: 15rem;
+  text-align: center;
+
 }
 
 #colors-list {
@@ -37,16 +46,21 @@ body {
   justify-content: space-evenly;
 }
 
+.color:hover {
+  cursor: pointer;
+}
+
 #colors-list div {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  margin-top: 40px;
-  transition: all 1s ease;
+  margin-top: 80px;
+  transition: all 0.3s ease-in-out;
 }
 
 .selected {
-  border: 2px solid black;
+  border: 5px solid rgb(74, 72, 72);
+  transform: scale(1.5);
 }
 
 /* colors */
