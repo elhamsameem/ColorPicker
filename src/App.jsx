@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div id="container">
+      <h1 className={`${selectedColor} title`}>🎨 Color Picker</h1>
       <div id="navbar">
         <div>Currently selected: </div>
         <div className={`${selectedColor} navColor`}>{selectedColor.toUpperCase()}</div>
